@@ -3,6 +3,7 @@ import Head from 'next/head';
 // components
 import Layout from '@/components/Layout/Layout';
 import GeneralIntroduction from '@/components/GeneralIntroduction/GeneralIntroduction';
+import About from '@/components/About/About';
 
 export default function Home() {
 	return (
@@ -16,6 +17,7 @@ export default function Home() {
 
 			<Layout>
 				<GeneralIntroduction />
+				<About />
 			</Layout>
 		</>
 	);

@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Layout from '@/components/Layout/Layout';
 import GeneralIntroduction from '@/components/GeneralIntroduction/GeneralIntroduction';
 import About from '@/components/About/About';
+import Skills from '@/components/Skills/Skills';
 
 export default function Home() {
 	return (
@@ -18,6 +19,7 @@ export default function Home() {
 			<Layout>
 				<GeneralIntroduction />
 				<About />
+				<Skills />
 			</Layout>
 		</>
 	);

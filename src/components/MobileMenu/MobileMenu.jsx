@@ -8,6 +8,7 @@ import { MdClose } from 'react-icons/md';
 
 // images
 import am_logo_dark from '../../images/am-logo-dark.png';
+import am_logo_light from '../../images/am-logo-light.png';
 
 const MobileMenu = ({ darkMode }) => {
 	const [open, setOpen] = useState(true);
@@ -53,8 +54,8 @@ const MobileMenu = ({ darkMode }) => {
 										<div className='flex items-center justify-between'>
 											<Link href='/'>
 												<Image
-													src={am_logo_dark}
-													alt='header logo'
+													src={darkMode ? am_logo_dark : am_logo_light}
+													alt='logo'
 													className='h-auto w-16'
 												/>
 											</Link>

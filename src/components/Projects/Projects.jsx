@@ -52,6 +52,7 @@ const Projects = ({}) => {
 												alt={item.slug}
 												width={100}
 												height={100}
+												unoptimized
 												className='aspect-square w-full rounded-md'
 											/>
 

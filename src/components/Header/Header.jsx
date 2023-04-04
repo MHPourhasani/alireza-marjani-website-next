@@ -8,6 +8,7 @@ import MobileMenu from '../MobileMenu/MobileMenu';
 
 // images
 import am_logo_dark from '../../images/am-logo-dark.png';
+import am_logo_light from '../../images/am-logo-light.png';
 
 // icons
 import { CgMenuLeft } from 'react-icons/cg';
@@ -27,7 +28,7 @@ const Header = ({ darkMode, setDarkMode }) => {
 		<header className='flex w-11/12 items-center justify-between pt-5 lg:w-10/12 lg:items-end'>
 			<Link href='/'>
 				<Image
-					src={am_logo_dark}
+					src={darkMode ? am_logo_dark : am_logo_light}
 					alt='header logo'
 					className='animate__animated animate__flipInY h-auto w-14 md:w-16'
 				/>

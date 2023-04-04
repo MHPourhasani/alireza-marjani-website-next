@@ -36,11 +36,11 @@ const Projects = ({}) => {
 				<Tab.Panels className='mt-2'>
 					{Object.values(categories).map((items, idx) => (
 						<Tab.Panel key={idx} className={classNames('outline-none')}>
-							<ul className='grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+							<ul className='grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 md:gap-5 xl:grid-cols-4'>
 								{items.map((item) => (
 									<li
 										key={item.id}
-										className='flex w-full flex-col items-center gap-5 rounded-md bg-gradient-to-t from-gradientTwo to-gradientOne p-3 hover:bg-gray-100 dark:from-darkGradientTwo dark:to-darkGradientOne'>
+										className='flex w-full sm:shadow-md sm:shadow-gray-700 flex-col items-center justify-center gap-5 rounded-md bg-gradient-to-t from-gradientTwo to-gradientOne p-3 hover:bg-gray-100 dark:from-darkGradientTwo dark:to-darkGradientOne'>
 										<Image
 											src={item.posterSrc}
 											alt={item.slug}
@@ -52,7 +52,7 @@ const Projects = ({}) => {
 										<Link
 											href={`/${item.slug}`}
 											state={{ item: item }}
-											className='text-sm text-white transition-all ease-in hover:text-primary lg:text-base'>
+											className='text-sm font-light text-white transition-all ease-in hover:text-primary'>
 											{item.name}
 										</Link>
 									</li>

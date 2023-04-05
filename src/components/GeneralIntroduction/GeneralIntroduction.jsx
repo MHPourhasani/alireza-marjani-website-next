@@ -2,9 +2,9 @@ import Image from 'next/image';
 
 // images
 import my_photo from '../../images/my-photo.png';
-import ps_logo from '../../images/ps-logo.png';
-import pr_logo from '../../images/pr-logo.png';
-import ae_logo from '../../images/ae-logo.png';
+import ps_logo from '../../images/logos/ps-logo.png';
+import pr_logo from '../../images/logos/pr-logo.png';
+import ae_logo from '../../images/logos/ae-logo.png';
 
 // icons
 import { BiPhoneCall } from 'react-icons/bi';

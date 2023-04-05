@@ -7,8 +7,8 @@ import SwitchBtn from '../SwitchBtn/SwitchBtn';
 import MobileMenu from '../MobileMenu/MobileMenu';
 
 // images
-import am_logo_dark from '../../images/am-logo-dark.png';
-import am_logo_light from '../../images/am-logo-light.png';
+import am_logo_dark from '../../images/logos/am-logo-dark.png';
+import am_logo_light from '../../images/logos/am-logo-light.png';
 
 // icons
 import { CgMenuLeft } from 'react-icons/cg';

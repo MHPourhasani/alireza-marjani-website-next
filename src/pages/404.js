@@ -19,12 +19,14 @@ const Custom404 = () => {
 			</Head>
 
 			<Layout>
-				<section className='flex min-h-screen w-11/12 flex-col items-center justify-center gap-14 py-14 lg:w-10/12'>
+				<section className='flex min-h-screen w-11/12 flex-col items-center justify-center gap-5 py-5 lg:w-10/12'>
 					<Image src={error_404} alt='404 error' />
-					<span>صفحه مورد نظر یافت نشد</span>
+					<span className='font-light text-black dark:text-white md:text-lg'>
+						صفحه مورد نظر یافت نشد
+					</span>
 					<Link
 						href='/'
-						className='rounded-md bg-primary py-2.5 text-black dark:text-white'>
+						className='rounded-md bg-primary px-4 py-2.5 text-black dark:text-white'>
 						بازگشت به صفحه اصلی
 					</Link>
 				</section>

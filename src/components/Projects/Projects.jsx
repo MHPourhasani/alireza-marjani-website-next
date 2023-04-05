@@ -47,14 +47,16 @@ const Projects = ({}) => {
 												query: item,
 											}}
 											className='flex w-full flex-col items-center justify-center gap-5'>
-											<Image
-												src={item.posterSrc}
-												alt={item.slug}
-												width={100}
-												height={100}
-												unoptimized
-												className='aspect-square w-full rounded-md'
-											/>
+											<div className='w- flex aspect-square items-center justify-center rounded-md bg-white dark:bg-black'>
+												<Image
+													src={item.posterSrc}
+													alt={item.slug}
+													width={100}
+													height={100}
+													unoptimized
+													className='h-full w-auto rounded-md'
+												/>
+											</div>
 
 											<span className='text-sm font-light text-black transition-all ease-in hover:text-primary dark:text-white'>
 												{item.name}

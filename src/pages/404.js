@@ -19,7 +19,7 @@ const Custom404 = () => {
 			</Head>
 
 			<Layout>
-				<section className='flex min-h-screen w-11/12 flex-col items-center justify-center gap-5 py-5 lg:w-10/12'>
+				<section className='flex min-h-screen w-11/12 flex-col items-center justify-center gap-7 py-14 lg:w-10/12'>
 					<Image src={error_404} alt='404 error' />
 					<span className='font-light text-black dark:text-white md:text-lg'>
 						صفحه مورد نظر یافت نشد

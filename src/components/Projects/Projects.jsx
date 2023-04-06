@@ -41,27 +41,29 @@ const Projects = ({}) => {
 									<li
 										key={item.id}
 										className='w-full rounded-md bg-gradient-to-t from-gradientTwo to-gradientOne p-3 shadow-gray-200 hover:bg-gray-100 dark:from-darkGradientTwo dark:to-darkGradientOne sm:shadow-md dark:sm:shadow-gray-700'>
-										<Link
-											href={{
-												pathname: `/${item.slug}`,
-												query: item,
-											}}
-											className='flex w-full flex-col items-center justify-center gap-5'>
-											<div className='w- flex aspect-square items-center justify-center rounded-md bg-white dark:bg-black'>
-												<Image
-													src={item.posterSrc}
-													alt={item.slug}
-													width={100}
-													height={100}
-													unoptimized
-													className='h-full w-auto rounded-md'
-												/>
-											</div>
+										{item.videosrc ? (
+											<a target='_blank' href={item.videosrc}></a>
+										) : (
+											<a
+												target='_blank'
+												href={item.href}
+												className='flex w-full flex-col items-center justify-center gap-5'>
+												<div className='w- flex aspect-square items-center justify-center rounded-md bg-white dark:bg-black'>
+													<Image
+														src={item.posterSrc}
+														alt={item.slug}
+														width={100}
+														height={100}
+														unoptimized
+														className='h-full w-auto rounded-md'
+													/>
+												</div>
 
-											<span className='text-sm font-light text-black transition-all ease-in hover:text-primary dark:text-white'>
-												{item.name}
-											</span>
-										</Link>
+												<span className='text-sm font-light text-black transition-all ease-in hover:text-primary dark:text-white'>
+													{item.name}
+												</span>
+											</a>
+										)}
 									</li>
 								))}
 							</ul>

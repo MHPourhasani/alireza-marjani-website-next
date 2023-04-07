@@ -1,6 +1,7 @@
 import logo_motion_1 from '../images/projects/motion graphic/logo-motion-1.jpg';
 import motion_graphic_3 from '../images/projects/motion graphic/motion-graphic-3.jpg';
 import vfx_1 from '../images/projects/motion graphic/vfx-1.jpg';
+import vfx_2 from '../images/projects/motion graphic/vfx-2.jpg';
 import stop_motion_1 from '../images/projects/motion graphic/stop-motion-1.jpg';
 import story_motion_1 from '../images/projects/motion graphic/story-motion-1.jpg';
 import story_motion_2 from '../images/projects/motion graphic/story-motion-2.jpg';
@@ -54,7 +55,7 @@ export const projects = {
 			name: '3D mobile',
 			slug: 'vfx-2',
 			category: 'motion graphic',
-			posterSrc: '',
+			posterSrc: vfx_2,
 			href: 'https://1drv.ms/v/s!ArNeogtEVeNZin7UqqqB4-doYyQT?e=cw8iCq',
 		},
 		{

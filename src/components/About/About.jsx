@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 // images
-import myPhoto from '../../images/my-photo.png';
+import myPhoto2 from '../../images/my-photo-2.png';
 
 const About = () => {
 	return (
@@ -10,9 +10,9 @@ const About = () => {
 			className='flex w-11/12 flex-col items-center justify-between gap-5 pb-16 pt-44 sm:flex-row sm:py-14 md:mt-0 md:gap-10 md:py-20 lg:w-10/12 lg:py-16 xl:gap-14'>
 			<div className='relative flex h-[26rem] w-full justify-center rounded-md bg-gradient-to-tr from-gradientTwo to-gradientOne shadow-xl shadow-gray-300 dark:from-darkGradientTwo dark:to-darkGradientOne dark:shadow-lg dark:shadow-gray-700 sm:h-[26rem] sm:flex-1 lg:h-[32rem]'>
 				<Image
-					src={myPhoto}
+					src={myPhoto2}
 					alt='my photo'
-					className='absolute bottom-0 h-auto w-10/12 sm:w-11/12 md:w-9/12 xl:w-8/12'
+					className='absolute bottom-0 h-auto w-10/12 sm:w-11/12 md:w-9/12 xl:w-7/12'
 				/>
 			</div>
 
@@ -20,15 +20,18 @@ const About = () => {
 				<span className='text-xl font-bold text-black dark:text-white'>من کیم؟</span>
 
 				<span className='flex flex-col gap-3 text-sm font-light leading-loose text-secondary lg:gap-5 lg:text-base'>
-					<p className='leading-loose'>
-						وی در ۱۶ فروردین ۱۳۸۰ در خانواده ای مذهبی در جنوب شرق تهران دیده به جهان
-						گشود 😂 و در حال حاضر دانشجوی کارشناسی صنایع هوایی می باشد.
-					</p>
+					<span>
+						<p className='leading-loose'>متولد ۱۶ فروردین ۱۳۸۰</p>
+						<p className='leading-loose'>در شهر تهران</p>
+						<p className='leading-loose'>
+							در حال حاضر دانشجوی کارشناسی صنایع هوایی هستم
+						</p>
+					</span>
 
 					<p className='leading-loose'>
-						خب، از سال ۹۵ بود وارد حوزه کار های گرافیکی شدم و در زمینه های مختلفی همچون
-						ساخت تیزر، نماهنگ، لوگو موشن، موشن گرافیک، تدوین و … با ارگان های مختلف
-						مذهبی و خصوصی و … کار کردم.
+						از سال ۹۵ وارد حوزه کار های گرافیکی شدم و در زمینه های مختلفی همچون ساخت
+						تیزر ، نماهنگ ، لوگو موشن ، موشن گرافیک ، تدوین و … با ارگان های مختلف مذهبی
+						و خصوصی و … کار کردم.
 					</p>
 
 					<p className='leading-loose'>

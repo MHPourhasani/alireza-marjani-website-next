@@ -1,5 +1,7 @@
 import logo_motion_1 from '../images/projects/motion graphic/logo-motion-1.jpg';
-import motion_graphic_3 from '../images/projects/motion graphic/motion-graphic-3.jpg';
+import logo_motion_2 from '../images/projects/motion graphic/logo-motion-2.jpg';
+import motion_graphic_1 from '../images/projects/motion graphic/motion-graphic-1.jpg';
+import motion_graphic_2 from '../images/projects/motion graphic/motion-graphic-2.jpg';
 import vfx_1 from '../images/projects/motion graphic/vfx-1.jpg';
 import vfx_2 from '../images/projects/motion graphic/vfx-2.jpg';
 import stop_motion_1 from '../images/projects/motion graphic/stop-motion-1.jpg';
@@ -10,6 +12,9 @@ import edit_1 from '../images/projects/edit/edit-1.jpg';
 import edit_2 from '../images/projects/edit/edit-2.jpg';
 import edit_3 from '../images/projects/edit/edit-3.jpg';
 import edit_4 from '../images/projects/edit/edit-4.jpg';
+import edit_mazhabi_1 from '../images/projects/edit/edit-mazhabi-1.jpg';
+import edit_mazhabi_2 from '../images/projects/edit/edit-mazhabi-2.jpg';
+import edit_mazhabi_3 from '../images/projects/edit/edit-mazhabi-3.jpg';
 
 import poster_1 from '../images/projects/design/poster-1.jpg';
 import poster_2 from '../images/projects/design/poster-2.jpg';
@@ -38,14 +43,30 @@ export const projects = {
 		{
 			id: 2,
 			name: 'لوگوموشن برند Google',
-			slug: 'motion-graphic-3',
+			slug: 'logo-motion-2',
 			category: 'motion graphic',
-			posterSrc: motion_graphic_3,
+			posterSrc: logo_motion_2,
 			// href: 'https://1drv.ms/v/s!ArNeogtEVeNZinwiReS3vcGlb3xf?e=aehJkf',
 			href: 'https://drive.google.com/file/d/10w2TSWCrNYXrOcYiIPmyko4stfFSfDNT/view?usp=share_link',
 		},
 		{
 			id: 3,
+			name: 'موشن گرافیک آدم در حال راه رفتن',
+			slug: 'motion-graphic-1',
+			category: 'motion graphic',
+			posterSrc: motion_graphic_1,
+			href: 'https://drive.google.com/file/d/1jA1mcr34kD9946j9mGJWasFyrHeoZ1sl/view?usp=share_link',
+		},
+		{
+			id: 4,
+			name: 'موشن گرافیک موتور سوار',
+			slug: 'motion-graphic-2',
+			category: 'motion graphic',
+			posterSrc: motion_graphic_2,
+			href: 'https://drive.google.com/file/d/1IPHCpgaTqlh1tUDtgGmTCBSqUgI8OZHK/view?usp=share_link',
+		},
+		{
+			id: 5,
 			name: '3D mobile',
 			slug: 'vfx-1',
 			category: 'motion graphic',
@@ -54,8 +75,8 @@ export const projects = {
 			href: 'https://drive.google.com/file/d/1HWlZtq_MIj9QalGZvJEpfktw6tl47oRK/view?usp=share_link',
 		},
 		{
-			id: 4,
-			name: '3D mobile',
+			id: 6,
+			name: 'انرژی فضایی',
 			slug: 'vfx-2',
 			category: 'motion graphic',
 			posterSrc: vfx_2,
@@ -63,7 +84,7 @@ export const projects = {
 			href: 'https://drive.google.com/file/d/1Glq45xssSbEqUDaW8JR4SKJduK_zc3ys/view?usp=share_link',
 		},
 		{
-			id: 5,
+			id: 7,
 			name: 'استاپ موشن ربات',
 			slug: 'stop-motion-1',
 			category: 'motion graphic',
@@ -72,7 +93,7 @@ export const projects = {
 			href: 'https://drive.google.com/file/d/1T0_88-BpEZH7k_iK8WLH72BizL5eJg18/view?usp=share_link',
 		},
 		{
-			id: 6,
+			id: 8,
 			name: 'استوری موشن دوره سیاه قلم',
 			slug: 'story-motion-1',
 			category: 'motion graphic',
@@ -81,7 +102,7 @@ export const projects = {
 			href: 'https://drive.google.com/file/d/12UTziyKkrtU-UkUb8K69LorBb05iwbsh/view?usp=share_link',
 		},
 		{
-			id: 7,
+			id: 9,
 			name: 'استوری موشن پادگان',
 			slug: 'story-motion-2',
 			category: 'motion graphic',
@@ -131,7 +152,7 @@ export const projects = {
 		{
 			id: 5,
 			name: 'ترس معنای واقعی قدرته',
-			slug: 'edit-4',
+			slug: 'edit-5',
 			category: 'edit',
 			posterSrc: edit_4,
 			// href: 'https://1drv.ms/v/s!ArNeogtEVeNZiwpq3DP4rqIr1IvU?e=MbLUhA',
@@ -140,11 +161,35 @@ export const projects = {
 		{
 			id: 6,
 			name: 'ترس معنای واقعی قدرته',
-			slug: 'edit-4',
+			slug: 'edit-6',
 			category: 'edit',
 			posterSrc: edit_4,
 			// href: 'https://1drv.ms/v/s!ArNeogtEVeNZiwkhUIgHm4aUEOsw?e=XP12fw',
 			href: 'https://drive.google.com/file/d/1KIxv-FUYy0NchdEs7q27Um12WPgyh_jt/view?usp=share_link',
+		},
+		{
+			id: 7,
+			name: 'ما را کسی نخواست',
+			slug: 'edit-7',
+			category: 'edit',
+			posterSrc: edit_mazhabi_1,
+			href: 'https://drive.google.com/file/d/1C0dU28JaIWYDehKjUZ0neeSJPvpx9Pss/view?usp=share_link',
+		},
+		{
+			id: 8,
+			name: 'به سمت گودال',
+			slug: 'edit-8',
+			category: 'edit',
+			posterSrc: edit_mazhabi_2,
+			href: 'https://drive.google.com/file/d/1_c-U1HLuboQM80R--9nt97hBY3yolbOW/view?usp=share_link',
+		},
+		{
+			id: 9,
+			name: 'تو شیب گودال',
+			slug: 'edit-9',
+			category: 'edit',
+			posterSrc: edit_mazhabi_3,
+			href: 'https://drive.google.com/file/d/1nVH1lv5PthTIreFwHg50_5ZTl94Hkk_m/view?usp=share_link',
 		},
 	],
 

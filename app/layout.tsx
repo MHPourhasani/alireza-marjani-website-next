@@ -7,12 +7,13 @@ import { ThemeProvider } from '@/hooks/useTheme';
 export const metadata: Metadata = {
     title: 'علیرضا مرجانی | گرافیست',
     description: 'علیرضا مرجانی هستم. گرافیست و ادیتور',
+    applicationName: 'Alireza Marjani',
     themeColor: '#21252A',
+    viewport: 'initial-scale=1.0, width=device-width',
+    keywords: ['Editor', 'photographer', 'film editor', 'camera', 'camera man', 'film maker', 'design', 'designer'],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-    // const { theme } = useTheme();
-
     return (
         <html lang="fa" dir="rtl">
             <body>

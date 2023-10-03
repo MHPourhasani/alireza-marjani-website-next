@@ -50,7 +50,7 @@ const Projects = ({}) => {
                                                 href={item.href}
                                                 className="flex w-full flex-col items-center justify-center gap-5"
                                             >
-                                                <div className="flex aspect-square w-full items-center justify-center rounded-md bg-white dark:bg-black">
+                                                <div className="flex aspect-square w-full items-center justify-center rounded-md bg-white dark:bg-transparent">
                                                     <Image
                                                         src={item.posterSrc}
                                                         alt={item.slug}

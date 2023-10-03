@@ -2,7 +2,9 @@ import { Metadata } from 'next';
 import './globals.css';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import 'react-loading-skeleton/dist/skeleton.css';
 import { ThemeProvider } from '@/hooks/useTheme';
+import Header from '@/components/Header/Header';
 
 export const metadata: Metadata = {
     title: 'علیرضا مرجانی | گرافیست',
@@ -16,9 +18,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="fa" dir="rtl">
-            <body>
+            <body className="flex flex-col justify-center items-center font-iranyekan">
                 <ToastContainer />
-                <ThemeProvider>{children}</ThemeProvider>
+                <ThemeProvider>
+                    <Header />
+                    {children}
+                </ThemeProvider>
             </body>
         </html>
     );

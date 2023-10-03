@@ -15,14 +15,8 @@ import am_logo_light from '../../images/logos/am-logo-light.png';
 import { CgMenuLeft } from 'react-icons/cg';
 import useTheme from '@/hooks/useTheme';
 
-interface Props {
-    darkMode: boolean;
-    setDarkMode: any;
-}
-
-const Header = ({ darkMode, setDarkMode }: Props) => {
-	    const { theme } = useTheme();
-
+const Header = () => {
+    const { theme } = useTheme();
     const [menuOpen, setMenuOpen] = useState(false);
 
     const listItems = [
@@ -34,35 +28,37 @@ const Header = ({ darkMode, setDarkMode }: Props) => {
     ];
 
     return (
-        <header className="flex w-11/12 items-center justify-between pt-5 lg:w-10/12 lg:items-end">
-            <Link href="/">
-                <Image
-                    src={darkMode ? am_logo_dark : am_logo_light}
-                    alt="header logo"
-                    className="animate__animated animate__flipInY h-auto w-14 md:w-16"
+        <header className={`flex w-full items-center justify-center pt-5 ${theme === 'dark' ? 'dark bg-darkBgColor' : 'bg-bgColor'}`}>
+            <section className="flex w-11/12 items-center justify-between lg:w-10/12 lg:items-end">
+                <Link href="/">
+                    <Image
+                        src={theme === 'dark' ? am_logo_dark : am_logo_light}
+                        alt="header logo"
+                        className="animate__animated animate__flipInY h-auto w-14 md:w-16"
+                    />
+                </Link>
+
+                <nav className="hidden lg:block">
+                    <ul className="flex items-center gap-11 font-light dark:text-white">
+                        {listItems.map((item) => (
+                            <li key={item.id}>
+                                <a href={`/#${item.id}`} className="transition-all hover:text-primary hover:ease-in">
+                                    {item.title}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
+
+                <SwitchBtn />
+
+                <CgMenuLeft
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    className="animate__animated animate__slideInLeft h-auto w-11 cursor-pointer p-1 text-black dark:text-white lg:hidden"
                 />
-            </Link>
 
-            <nav className="hidden lg:block">
-                <ul className="flex items-center gap-11 font-light dark:text-white">
-                    {listItems.map((item) => (
-                        <li key={item.id}>
-                            <a href={`/#${item.id}`} className="transition-all hover:text-primary hover:ease-in">
-                                {item.title}
-                            </a>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
-
-            <SwitchBtn darkMode={darkMode} setDarkMode={setDarkMode} />
-
-            <CgMenuLeft
-                onClick={() => setMenuOpen(!menuOpen)}
-                className="animate__animated animate__slideInLeft h-auto w-11 cursor-pointer p-1 text-black dark:text-white lg:hidden"
-            />
-
-            {menuOpen ? <MobileMenu darkMode={darkMode} /> : null}
+                {menuOpen ? <MobileMenu theme={theme} /> : null}
+            </section>
         </header>
     );
 };

@@ -12,7 +12,7 @@ import am_logo_dark from '../../images/logos/am-logo-dark.png';
 import am_logo_light from '../../images/logos/am-logo-light.png';
 
 interface Props {
-    darkMode:boolean;
+    theme: 'light' | 'dark';
 }
 
 const MobileMenu = ({ darkMode }: Props) => {

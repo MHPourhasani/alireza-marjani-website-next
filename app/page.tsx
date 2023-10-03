@@ -12,7 +12,7 @@ export default function Home() {
 
     return (
         <main
-            className={`flex w-full flex-col items-center justify-center font-iranyekan ${
+            className={`flex w-full flex-col items-center justify-center ${
                 theme === 'dark' ? 'dark bg-darkBgColor' : 'bg-bgColor'
             }`}
         >

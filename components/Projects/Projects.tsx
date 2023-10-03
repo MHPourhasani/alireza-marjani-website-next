@@ -50,12 +50,12 @@ const Projects = ({}) => {
                                                 href={item.href}
                                                 className="flex w-full flex-col items-center justify-center gap-5"
                                             >
-                                                <div className="w- flex aspect-square items-center justify-center rounded-md bg-white dark:bg-black">
+                                                <div className="w-full flex aspect-square items-center justify-center rounded-md bg-white dark:bg-black">
                                                     <Image
                                                         src={item.posterSrc}
                                                         alt={item.slug}
-                                                        width={100}
-                                                        height={100}
+                                                        width={500}
+                                                        height={500}
                                                         unoptimized
                                                         className="h-full w-auto rounded-md"
                                                     />

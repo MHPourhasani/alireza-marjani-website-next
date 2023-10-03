@@ -42,15 +42,15 @@ const Projects = ({}) => {
                                         key={item.id}
                                         className="w-full rounded-md bg-gradient-to-t from-gradientTwo to-gradientOne p-3 shadow-gray-200 hover:bg-gray-100 dark:from-darkGradientTwo dark:to-darkGradientOne sm:shadow-md dark:sm:shadow-gray-700"
                                     >
-                                        {item.videosrc ? (
-                                            <a target="_blank" href={item.videosrc}></a>
+                                        {item.videoSrc ? (
+                                            <a target="_blank" href={item.videoSrc}></a>
                                         ) : (
                                             <a
                                                 target="_blank"
                                                 href={item.href}
                                                 className="flex w-full flex-col items-center justify-center gap-5"
                                             >
-                                                <div className="w-full flex aspect-square items-center justify-center rounded-md bg-white dark:bg-black">
+                                                <div className="flex aspect-square w-full items-center justify-center rounded-md bg-white dark:bg-black">
                                                     <Image
                                                         src={item.posterSrc}
                                                         alt={item.slug}

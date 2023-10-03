@@ -38,7 +38,7 @@ const GeneralIntroduction = () => {
         },
         {
             icon: <HiOutlineMail className="h-auto w-8" />,
-            href: 'mailto:alirezamarjani.pr@gmail.com',
+            href: 'mailto:amstudio.ir@gmail.com',
         },
         {
             icon: <FaTelegramPlane className="h-auto w-6" />,

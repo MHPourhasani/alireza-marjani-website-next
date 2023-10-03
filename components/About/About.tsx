@@ -11,7 +11,7 @@ const About = () => {
             className="flex w-11/12 flex-col items-center justify-between gap-5 pb-16 pt-44 sm:flex-row sm:py-14 md:mt-0 md:gap-10 md:py-20 lg:w-10/12 lg:py-16 xl:gap-14"
         >
             <div className="relative flex h-[26rem] w-full justify-center rounded-md bg-gradient-to-tr from-gradientTwo to-gradientOne shadow-xl shadow-gray-300 dark:from-darkGradientTwo dark:to-darkGradientOne dark:shadow-lg dark:shadow-gray-700 sm:h-[26rem] sm:flex-1 lg:h-[32rem]">
-                <Image src={myPhoto2} alt="my photo" className="absolute bottom-0 h-auto w-10/12 sm:w-11/12 md:w-9/12 xl:w-7/12" />
+                <Image src={myPhoto2} alt="my photo" className="absolute bottom-0 h-auto w-10/12 sm:w-11/12 md:w-9/12 xl:w-7/12 2xl:w-6/12" />
             </div>
 
             <div className="flex flex-1 flex-col gap-4 md:gap-5">

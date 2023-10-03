@@ -3,6 +3,7 @@ import { Fragment, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import Image from 'next/image';
 import Link from 'next/link';
+import useTheme from '@/hooks/useTheme';
 
 // icons
 import { MdClose } from 'react-icons/md';
@@ -11,11 +12,8 @@ import { MdClose } from 'react-icons/md';
 import am_logo_dark from '../../images/logos/am-logo-dark.png';
 import am_logo_light from '../../images/logos/am-logo-light.png';
 
-interface Props {
-    theme: 'light' | 'dark';
-}
-
-const MobileMenu = ({ darkMode }: Props) => {
+const MobileMenu = () => {
+    const { theme } = useTheme();
     const [open, setOpen] = useState(true);
 
     const menuListItem = [
@@ -53,11 +51,17 @@ const MobileMenu = ({ darkMode }: Props) => {
                                 leaveFrom="translate-x-0"
                                 leaveTo="translate-x-full"
                             >
-                                <Dialog.Panel className={`pointer-events-auto w-56 ${darkMode ? 'dark bg-darkBgColor' : 'bg-bgColor'}`}>
+                                <Dialog.Panel
+                                    className={`pointer-events-auto w-56 ${theme === 'dark' ? 'dark bg-darkBgColor' : 'bg-bgColor'}`}
+                                >
                                     <div dir="rtl" className="flex h-full flex-col p-5 shadow-xl">
                                         <div className="flex items-center justify-between">
                                             <Link href="/">
-                                                <Image src={darkMode ? am_logo_dark : am_logo_light} alt="logo" className="h-auto w-16" />
+                                                <Image
+                                                    src={theme === 'dark' ? am_logo_dark : am_logo_light}
+                                                    alt="logo"
+                                                    className="h-auto w-16"
+                                                />
                                             </Link>
 
                                             <button onClick={() => setOpen(false)} className="text-secondary hover:text-primary">

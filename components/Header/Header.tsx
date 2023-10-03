@@ -57,7 +57,7 @@ const Header = () => {
                     className="animate__animated animate__slideInLeft h-auto w-11 cursor-pointer p-1 text-black dark:text-white lg:hidden"
                 />
 
-                {menuOpen ? <MobileMenu theme={theme} /> : null}
+                {menuOpen ? <MobileMenu /> : null}
             </section>
         </header>
     );
